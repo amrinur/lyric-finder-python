@@ -69,8 +69,6 @@ def history():
 
     history_window.mainloop()
 
-
-
 def clear():
     result.delete(1.0, END)
     translated_text.delete(1.0, END)
@@ -100,7 +98,6 @@ def translate_it():
 		# Output translated text to screen
 		translated_text.insert(1.0, words)
 		
-
 	except Exception as e:
 		messagebox.showerror("Translator", e)
 
@@ -116,13 +113,6 @@ master = Tk()
 master.title("Lyric Finder by Kelompok Petruk")
 #master.iconbitmap("unslogo.ico")
 master.geometry("1000x600")
-
-
-# Add image file
-bg = PhotoImage( file = "kel333.png")
-# Show image using label
-label1 = Label( master, image = bg)
-label1.place(x = 0,y = 0)
 
 # Variable Classes in tkinter
 result = StringVar()
