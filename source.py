@@ -8,7 +8,7 @@ from datetime import datetime
 
 def get_lyrics():
     try:
-        extract_lyrics = SongLyrics("AIzaSyANAlg2YPNGFJAMYs7Ig1jsAomuhEiHFTU", "0666459650d114110")
+        extract_lyrics = SongLyrics("API_Key", "API_Key")
         
         temp = extract_lyrics.get_lyrics(str(input_user.get()))
         res = temp['lyrics']
